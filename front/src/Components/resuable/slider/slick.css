@@ -1,0 +1,58 @@
+.slider .slick-prev:before,
+.slider .slick-next:before {
+    color: var(--primary);
+    font-size: 28px;
+    line-height: 1.4;
+    opacity: 1;
+    padding: 5px;
+}
+
+.slider_wrapper {
+    position: relative;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: -24px;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 20px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: unset;
+    right: 50px;
+}
+
+
+/* for single slider */
+
+.single_slider .meta {
+    font-size: 14px;
+    color: #898989;
+}
+
+.single_slider img {
+    border-radius: 10px;
+}
+
+.slider .slick-dots,
+.single_slider .slick-dots {
+    position: unset;
+}
+
+.slider .slick-dots li button::before,
+.single_slider .slick-dots li button::before {
+    color: #898989;
+    opacity: 1;
+    font-size: 12px;
+    border: 1px solid #898989;
+    border-radius: 10px;
+}
+
+.slider .slick-dots li.slick-active button:before,
+.single_slider .slick-dots li.slick-active button:before {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}

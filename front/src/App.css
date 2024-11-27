@@ -1,0 +1,22 @@
+/* banner css */
+.banner{
+    background-image: url('./assets/img/bg-dot.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.banner .content h1{
+    line-height: 1.1;
+}
+
+.search_here > * {
+    background-color: transparent;
+}
+.search_Input{
+    border: none;
+    outline: none;
+    color: #000;
+}
+.search_Input::placeholder{
+    color: #999;
+}

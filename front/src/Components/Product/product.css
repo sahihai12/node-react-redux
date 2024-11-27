@@ -1,0 +1,93 @@
+/* rightbar css */
+.right_sidebar .lists {
+    margin-left: 10px;
+}
+
+.right_sidebar .lists li {
+    font-size: 16px;
+    font-weight: 700;
+    list-style-type: square;
+    list-style-position: inside;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.right_sidebar .lists li span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.right_sidebar .colors li div {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.right_sidebar .colors li:hover div {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.right_sidebar .lists li:hover {
+    transform: translateX(10px);
+}
+
+/* mainprduct listing */
+
+.show_products .img_warpper {
+    scale: 0;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    transition: scale .3s ease-in-out;
+    transform-origin: center;
+}
+
+.show_products .img:hover .img_warpper {
+    scale: 1;
+}
+
+.show_products .img_warpper .cart,
+.show_products .img_warpper .wishlist {
+    font-size: 22px;
+    background-color: aliceblue;
+    margin: 0 10px;
+    padding: 8px;
+    border-radius: 40px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.show_products .img:hover .cart,
+.show_products .img:hover .wishlist {
+    opacity: 1;
+    align-self: end;
+}
+
+.product_item .brand {
+    opacity: 0.8;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.product_item .price>div::before {
+    content: '$ ';
+}
+
+.product_item .img:hover img {
+    mix-blend-mode: luminosity;
+}
+
+/* single product details */
+.product_info .details * {
+    font-family: "Roboto Condensed", sans-serif !important;
+}
+
+.add_tocart:hover {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}

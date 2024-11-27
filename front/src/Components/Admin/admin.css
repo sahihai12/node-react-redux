@@ -1,0 +1,13 @@
+.admin_header .active {
+    color: var(--primary);
+}
+
+.recent_blogs .img,
+.recent_products .img {
+    max-width: 145px;
+    width: 100%;
+}
+/* create blog css */
+.text_editor .ql-editor>p {
+    font-size: 15px;
+}
